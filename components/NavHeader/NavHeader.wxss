@@ -1,0 +1,19 @@
+.title{
+  color: #666;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+.recommend{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+}
+.recommend .more{
+  border: 1rpx solid #333;
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+}

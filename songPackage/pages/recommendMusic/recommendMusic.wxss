@@ -1,0 +1,64 @@
+/* 图片区域 */
+.music-header{
+  position: relative;
+  width: 100%;
+  height: 300rpx;
+}
+.music-header image{
+  width: 100%;
+  height: 100%;
+}
+.date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50rpx;
+  margin-left: -150rpx;
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+}
+/* 列表区域 */
+.music-list{
+  position: relative;
+  top: -20rpx;
+  background-color: #fff;
+  padding: 0 20rpx;
+  border-radius: 30rpx;
+  height: 500rpx;
+}
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+/* scrollview区域 */
+.scrollItem{
+  position: relative;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.scrollItem image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+}
+.scrollItem .songInfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+.songInfo text{
+  font-size: 24rpx;
+}
+.scrollItem .iconfont{
+  position: absolute;
+  right: 0;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+}

@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/login/login",
+    "pages/vedio/vedio"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "张小勇音乐",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/images/tabs/tab-home.png",
+        "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/vedio/vedio",
+        "text": "视频",
+        "iconPath": "/static/images/tabs/select.png",
+        "selectedIconPath": "/static/images/tabs/selected.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/tabs/tab-my.png",
+        "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap44.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "subpackages": [
+    {
+      "root": "songPackage",
+      "name": "song",
+      "pages": [
+        "pages/recommendMusic/recommendMusic",
+        "pages/musicDetail/musicDetail"
+      ],
+      "independent": true
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "packages": ["song"]
+    }
+  }
+}
